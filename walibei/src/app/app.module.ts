@@ -9,12 +9,24 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { ProduitComponent } from './produit/produit.component';
+import { ServiceComponent } from './service/service.component';
+import { EmploiComponent } from './emploi/emploi.component';
+import { LivraisonComponent } from './livraison/livraison.component';
+import { TarifsComponent } from './tarifs/tarifs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AccueilComponent,
+    ProduitComponent,
+    ServiceComponent,
+    EmploiComponent,
+    LivraisonComponent,
+    TarifsComponent
   ],
   imports: [
     BrowserModule,
