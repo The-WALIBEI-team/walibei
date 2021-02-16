@@ -1,21 +1,76 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="accueil" style="color: darkorange">
+    <img src="assets/logo.png" width="40" height="40" alt="WALIBEI-LOGO">
+      WALIBEI
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
   </button>
   
   <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-              <a class="nav-link" [routerLink] = "['']" routerLinkActive = "active">Home</a>
+              <a class="nav-link" [routerLink] = "['']" routerLinkActive = "active">Accueil</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="product">
+              <i class="bi bi-cart3"></i>
+              Produit
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="product">Tous les produits</a>
+              <a class="dropdown-item" href="product-online">Achat en ligne</a>
+              <a class="dropdown-item" href="product-clickandcollect">Click-&-Collect</a>
+              <a class="dropdown-item" href="product-second-hand">Occasion-2e main</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="product-nearby-shop">Point de vente a proximité</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="service">
+              <i class="bi bi-bezier2"></i>
+              Service
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="service">Tous les services</a>
+              <a class="dropdown-item" href="service-online">A distance / En ligne</a>
+              <a class="dropdown-item" href="service-inperson">En presentiel</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="service-freelancing">Trouver un freelancer</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="job"> <i class="bi bi-people-fill"></i>
+              Emploi
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="job">Tous les emplois</a>
+              <a class="dropdown-item" href="job-professionals">Professionels</a>
+              <a class="dropdown-item" href="job-technicians">Techniciens</a>
+              <a class="dropdown-item" href="job-repairers">Reparateurs</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="job-post-job">Proposer une offre d'emploi</a>
+            </div>
           </li>
           <li class="nav-item">
-              <a class="nav-link" [routerLink] = "['login']" routerLinkActive = "active">Login</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" [routerLink] = "['register']" routerLinkActive = "active" >Register</a>
+            <a class="nav-link" href="livraison"> <i class="bi bi-truck"></i>Livraison</a>
           </li>
       </ul>
+      <ul class="navbar-nav my-2 my-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="pricing"> <i class="bi bi-cash"></i>Tarifs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink] = "['login']" routerLinkActive = "active">Connexion</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" [routerLink] = "['register']" routerLinkActive = "active" >Inscription</a>
+      </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="What do you want?" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
   </div>
   <!-- 
     <span>
