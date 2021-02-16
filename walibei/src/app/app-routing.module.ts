@@ -7,6 +7,7 @@ import { ProduitComponent } from './produit/produit.component';
 import { ServiceComponent } from './service/service.component';
 import { EmploiComponent } from './emploi/emploi.component';
 import { LivraisonComponent } from './livraison/livraison.component';
+import { TarifsComponent } from './tarifs/tarifs.component';
 
 
 const routes: Routes = [
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: 'produit', component: ProduitComponent},
   {path: 'service', component: ServiceComponent},
   {path: 'emploi', component: EmploiComponent},
-  {path: 'livraisom', component: LivraisonComponent}
+  {path: 'livraison', component: LivraisonComponent},
+  {path: 'tarifs', component: TarifsComponent},
   
 ];
 

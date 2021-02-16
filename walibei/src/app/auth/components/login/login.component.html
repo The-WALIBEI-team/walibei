@@ -1,13 +1,20 @@
-<div class = 'row m-0 w-100'>
-    <div class = 'col-md-4 offset-4 mt-5' *ngIf = '!this.isLogin'>
-        <h4>Login</h4><form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
-            <div class = 'form-group'>
-                <input class = 'form-control' type = "text" name = "email" placeholder = "email" ngModel></div>
-                <div class = 'form-group'><input class = 'form-control' type = "password" name = "password" placeholder = "Password" ngModel>
-                </div><input class= 'btn btn-outline-info' type = "submit" value = "Login"></form>
-            </div>
-            <div class = 'col-md-4 offset-4 mt-5' *ngIf = 'this.isLogin'>
-                <h1>You are logged in</h1>
-                <button class = 'btn btn-outline-info' (click) = 'logout()'>Log-out</button>
-            </div>          
-</div>
+<form class="form-signin">
+    <div class="text-center mb-4">
+        <img class="mb-4" src="assets/logo.png" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Product - Service - Job</h1>
+        <p>Log into your account to use walibei and get the most out of it</p>
+    </div>
+    <div class = 'row m-0 w-100'>
+        <div class = 'col-md-4 offset-4 mt-5' *ngIf = '!this.isLogin'>
+            <h4>Login</h4><form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+                <div class = 'form-group'>
+                    <input class = 'form-control' type = "text" name = "email" placeholder = "email" ngModel></div>
+                    <div class = 'form-group'><input class = 'form-control' type = "password" name = "password" placeholder = "Password" ngModel>
+                    </div><input class= 'btn btn-outline-info' type = "submit" value = "Login"></form>
+                </div>
+                <div class = 'col-md-4 offset-4 mt-5' *ngIf = 'this.isLogin'>
+                    <h1>You are logged in</h1>
+                    <button class = 'btn btn-outline-info' (click) = 'logout()'>Log-out</button>
+                </div>          
+    </div>
+</form>
