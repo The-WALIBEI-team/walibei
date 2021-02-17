@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/components/login/login.component';
 import { RegisterComponent } from './auth/components/register/register.component';
 import { AccueilComponent } from './accueil/accueil.component';
-import { ProduitComponent } from './produit/produit.component';
-import { ServiceComponent } from './service/service.component';
-import { EmploiComponent } from './emploi/emploi.component';
-import { LivraisonComponent } from './livraison/livraison.component';
-import { TarifsComponent } from './tarifs/tarifs.component';
+import { ProduitComponent } from './auth/components/produit/produit.component';
+import { ServiceComponent } from './auth/components/service/service.component';
+import { EmploiComponent } from './auth/components/emploi/emploi.component';
+import { LivraisonComponent } from './auth/components/livraison/livraison.component';
+import { TarifsComponent } from './auth/components/tarifs/tarifs.component';
 
 
 const routes: Routes = [
